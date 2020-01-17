@@ -2,7 +2,7 @@
   "name": "wild-monster",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anggihseptiawan/wild-monster/",
+  "homepage": "https://github.com/anggihseptiawan/wild-monster",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -11,7 +11,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
-    "serialize-javascript": "^2.1.1"
+    "serialize-javascript": "^2.1.2"
   },
   "scripts": {
     "predeploy": "npm run build",
