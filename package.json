@@ -11,7 +11,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
-    "serialize-javascript": "2.1.1"
+    "serialize-javascript": "^2.1.1"
   },
   "scripts": {
     "predeploy": "npm run build",
