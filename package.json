@@ -13,6 +13,9 @@
     "react-scripts": "3.3.0",
     "serialize-javascript": "^2.1.2"
   },
+  "resolutions": {
+    "serialize-javascript": "^2.1.1"
+  },
   "scripts": {
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
