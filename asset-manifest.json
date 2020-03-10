@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/anggihseptiawan/wild-monster/static/css/main.b247e358.chunk.css",
-    "main.js": "/anggihseptiawan/wild-monster/static/js/main.7d350e75.chunk.js",
-    "main.js.map": "/anggihseptiawan/wild-monster/static/js/main.7d350e75.chunk.js.map",
-    "runtime-main.js": "/anggihseptiawan/wild-monster/static/js/runtime-main.2e0b6f9f.js",
-    "runtime-main.js.map": "/anggihseptiawan/wild-monster/static/js/runtime-main.2e0b6f9f.js.map",
-    "static/js/2.2135a697.chunk.js": "/anggihseptiawan/wild-monster/static/js/2.2135a697.chunk.js",
-    "static/js/2.2135a697.chunk.js.map": "/anggihseptiawan/wild-monster/static/js/2.2135a697.chunk.js.map",
-    "index.html": "/anggihseptiawan/wild-monster/index.html",
-    "precache-manifest.8a5139abb54dbd5bd2bd74cd4a25a1e4.js": "/anggihseptiawan/wild-monster/precache-manifest.8a5139abb54dbd5bd2bd74cd4a25a1e4.js",
-    "service-worker.js": "/anggihseptiawan/wild-monster/service-worker.js",
-    "static/css/main.b247e358.chunk.css.map": "/anggihseptiawan/wild-monster/static/css/main.b247e358.chunk.css.map",
-    "static/js/2.2135a697.chunk.js.LICENSE": "/anggihseptiawan/wild-monster/static/js/2.2135a697.chunk.js.LICENSE"
+    "main.css": "/wild-monster/static/css/main.b247e358.chunk.css",
+    "main.js": "/wild-monster/static/js/main.a5d41a45.chunk.js",
+    "main.js.map": "/wild-monster/static/js/main.a5d41a45.chunk.js.map",
+    "runtime-main.js": "/wild-monster/static/js/runtime-main.6e508be2.js",
+    "runtime-main.js.map": "/wild-monster/static/js/runtime-main.6e508be2.js.map",
+    "static/js/2.2135a697.chunk.js": "/wild-monster/static/js/2.2135a697.chunk.js",
+    "static/js/2.2135a697.chunk.js.map": "/wild-monster/static/js/2.2135a697.chunk.js.map",
+    "index.html": "/wild-monster/index.html",
+    "precache-manifest.f362a019512d31fffe8038c553370208.js": "/wild-monster/precache-manifest.f362a019512d31fffe8038c553370208.js",
+    "service-worker.js": "/wild-monster/service-worker.js",
+    "static/css/main.b247e358.chunk.css.map": "/wild-monster/static/css/main.b247e358.chunk.css.map",
+    "static/js/2.2135a697.chunk.js.LICENSE": "/wild-monster/static/js/2.2135a697.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.2e0b6f9f.js",
+    "static/js/runtime-main.6e508be2.js",
     "static/js/2.2135a697.chunk.js",
     "static/css/main.b247e358.chunk.css",
-    "static/js/main.7d350e75.chunk.js"
+    "static/js/main.a5d41a45.chunk.js"
   ]
 }
