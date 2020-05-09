@@ -1,53 +1,49 @@
-import React, { Component } from 'react';
-import {Cardlist} from './components/cardlist/cardlist';
-import {SearchBox} from './components/search-box/search-box.component';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { Cardlist } from "./components/cardlist/cardlist";
+import { SearchBox } from "./components/search-box/search-box.component";
+import "./App.css";
 
-class App extends Component {
-  constructor() {
-    // what the super does is call construction function in React Component
-    super();
+const App = () => {
+	const [monsters, setMonster] = useState([]);
+	const [searchField, setSearchField] = useState("");
 
-    this.state = {
-      monsters: [],
-      searchField: ''
-    }
-  }
+	useEffect(() => {
+		const fetchData = async () => {
+			const res = await fetch(
+				"https://jsonplaceholder.typicode.com/users"
+			);
+			const data = await res.json();
+			setMonster(data);
+		};
 
-  componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(res => res.json())
-    .then(users => this.setState({ monsters: users }))
-  }
+		fetchData();
+	}, []);
 
-  // with the arrow function, we dont need to bind this method, "this" automaticly points to this method
-  handleChange = (e) => {
-    this.setState({ searchField: e.target.value })
-  }
+	const filteredMonsters = monsters.filter((monster) =>
+		// includes will return true or false
+		{
+			let match = monster.name
+				.toLowerCase()
+				.match(searchField.toLocaleLowerCase());
+			return match;
+			// return monster.name.toLowerCase().includes(searchField.toLocaleLowerCase())
+		}
+	);
 
-  render() {
-    const { monsters, searchField } = this.state;
-    // const above will return this its call destructuring
-    // const monsters = this.state.monsters;
-    // const searchField = this.state.searchField;
+	const handleChange = (e) => {
+		setSearchField(e.target.value);
+	};
 
-    const filteredMonsters = monsters.filter(monster =>
-      // includes will return true or false 
-      monster.name.toLowerCase().includes(searchField.toLocaleLowerCase())
-    );
-
-
-    return (
-      <div className="App">
-        <h2>Wild Monster</h2>
-        <SearchBox 
-          placeholder="search monster.." 
-          handleChange={this.handleChange} 
-        />
-        <Cardlist monsters={filteredMonsters} />
-      </div>
-    );
-  }
-}
+	return (
+		<div className="App">
+			<h2>Wild Monster</h2>
+			<SearchBox
+				placeholder="search monster.."
+				handleChange={handleChange}
+			/>
+			<Cardlist monsters={filteredMonsters} />
+		</div>
+	);
+};
 
 export default App;
