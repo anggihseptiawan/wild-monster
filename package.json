@@ -2,7 +2,6 @@
   "name": "wild-monster",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anggihseptiawan.github.io/wild-monster/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -18,19 +17,16 @@
     "react-scripts": "5.0.1",
     "typescript": "^4.7.2"
   },
-  "resolutions": {
-    "serialize-javascript": "^2.1.1"
-  },
   "scripts": {
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
   },
   "browserslist": {
     "production": [
@@ -43,10 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.0.24"
   }
 }
